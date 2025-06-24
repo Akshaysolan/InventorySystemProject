@@ -1,0 +1,140 @@
+.register-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.register-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #7af0a9, #6dd5ed);
+  overflow: hidden;
+}
+
+.register-right {
+  flex: 1;
+  position: relative;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  overflow: hidden;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgb(170, 202, 246);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  transition: transform 0.7s ease-in-out;
+}
+
+.register-slide-in {
+  transform: translateX(0);
+}
+
+.register-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2193b0;
+}
+
+.register-form-group {
+  margin-bottom: 20px;
+}
+
+.register-label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #333;
+}
+
+.register-input,
+.register-select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.register-input:focus,
+.register-select:focus {
+  outline: none;
+  border-color: #2193b0;
+}
+
+.register-invalid {
+  border-color: #e74c3c;
+}
+
+.register-error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2193b0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #197a91;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #2193b0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Dots Animation */
+.register-dot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: float 4s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 10 Different Colored Dots */
+.dot-1 { top: 10%; left: 20%; background: #ff6b6b; animation-delay: 0s; }
+.dot-2 { top: 30%; left: 40%; background: #feca57; animation-delay: 0.2s; }
+.dot-3 { top: 50%; left: 60%; background: #48dbfb; animation-delay: 0.4s; }
+.dot-4 { top: 70%; left: 80%; background: #1dd1a1; animation-delay: 0.6s; }
+.dot-5 { top: 85%; left: 25%; background: #5f27cd; animation-delay: 0.8s; }
+.dot-6 { top: 15%; left: 75%; background: #ff9ff3; animation-delay: 1s; }
+.dot-7 { top: 25%; left: 50%; background: #00d2d3; animation-delay: 1.2s; }
+.dot-8 { top: 65%; left: 35%; background: #ee5253; animation-delay: 1.4s; }
+.dot-9 { top: 40%; left: 10%; background: #c8d6e5; animation-delay: 1.6s; }
+.dot-10 { top: 60%; left: 90%; background: #10ac84; animation-delay: 1.8s; }
